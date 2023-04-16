@@ -7,8 +7,8 @@ function GitPNG(GithubImg,ImageName)
 end
 
 local reb = false
-local seer = false
-local mat = false
+local dep = false
+local sil = false
 local phil = false
 local blink = false
 local clam = false
@@ -19,7 +19,7 @@ firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent
 -- Custom Door Sounds
 loadstring(game:HttpGet("https://pastebin.com/raw/iAhTGdBh"))()
 loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/PhilV2.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Endlessmode/main/Whitelist"))()
 
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 
@@ -41,35 +41,35 @@ local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 -- Creates and displays your custom achievement
 Achievements.Get({
     Title = "I Always Come Back.",
-    Desc = "Encounter Rebound.",
-    Reason = " ",
+    Desc = "Coming back for more..",
+    Reason = "Encounter Rebound",
     Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/Rebound_badge.png?raw=true","boundbadge"),
 })
 end
     end
 end)()
 
--- Overseer Eyes
+-- Depth
 coroutine.wrap(function()
     while true do
-        wait(150)
+        wait(190)
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
   if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
           return
     end
 wait(0.5)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Overseer.txt"))()
-if seer == false then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/floor-2/main/Depth"))()
+if dep == false then
 wait(3)
-seer = true
+dep = true
 local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
 -- Creates and displays your custom achievement
 Achievements.Get({
-    Title = "Staring Back.",
-    Desc = "Encounter Overseer Eyes.",
+    Title = "Blue mouth?.",
+    Desc = "Encounter Depth.",
     Reason = " ",
-    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/seerbadge.png?raw=true","seerbadge"),
+    Image = GitPNG("https://github.com/ThatNoah/floor-2/blob/main/Png.png?raw=true","seerbadge"),
 })
 end
     end
@@ -82,13 +82,13 @@ coroutine.wrap(function()
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 workspace.Mimic.BoundMimic1:Destroy()
 wait(1.55)
-if workspace:FindFirstChild("Matcher") == nil and workspace:FindFirstChild("RushMoving") == nil and workspace:FindFirstChild("Bound") == nil and workspace:FindFirstChild("AmbushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+if workspace:FindFirstChild("Depth") == nil and workspace:FindFirstChild("RushMoving") == nil and workspace:FindFirstChild("Bound") == nil and workspace:FindFirstChild("AmbushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Boundmimic.txt"))()
 end
     end
 end)()
 
--- Matcher
+-- silence
 coroutine.wrap(function()
     while true do
         wait(150)
@@ -97,24 +97,24 @@ coroutine.wrap(function()
           return
     end
         wait(0.3)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/MatcherV3.txt"))()
-        if mat == false then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/SilenceEndless.txt"))()
+        if sil == false then
         wait(3)
-        mat = true
+        sil = true
 local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
 -- Creates and displays your custom achievement
 Achievements.Get({
-    Title = "No match for me!",
-    Desc = "Encounter Matcher.",
-    Reason = " ",
-    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/matchbadge.png?raw=true","matchbadge"),
+    Title = "Very Silent!",
+    Desc = "Im always in the dark keep ur lighter on.",
+    Reason = "Encounter Silence",
+    Image = GitPNG("https://github.com/ThatNoah/Endlessmode/blob/main/Silence.jpg.png","badge"),
 })
 end
     end
 end)()
 
--- Claim
+-- Not taken yet
 coroutine.wrap(function()
     while true do
         wait(750)
@@ -122,16 +122,16 @@ coroutine.wrap(function()
           if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
           return
     end
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/ClaimV2.txt"))()
+        loadstring(game:HttpGet(""))()
     end
 end)()
 
--- Phil
+-- Not taken yet
 coroutine.wrap(function()
     while true do
         wait(1204)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/PhilSpawn.txt"))()
+        loadstring(game:HttpGet("l"))()
         if phil == false then
         wait(3)
         phil = true
@@ -142,13 +142,13 @@ Achievements.Get({
     Title = "I can't see anything!",
     Desc = "Encounter Phil.",
     Reason = " ",
-    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/philbadge.png?raw=true","philbadge"),
+    Image = GitPNG("","badge"),
 })
 end
     end
 end)()
 
--- Blink
+-- not taken yet
 coroutine.wrap(function()
     while true do
         wait(950)
@@ -156,7 +156,7 @@ coroutine.wrap(function()
           if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
           return
     end
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Blunt.txt"))()
+        loadstring(game:HttpGet(""))()
         if blink == false then
             wait(5)
             blink = true
@@ -164,10 +164,10 @@ local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 
 -- Creates and displays your custom achievement
 Achievements.Get({
-    Title = "Green Light, Red Light!",
-    Desc = "Encounter Blink.",
+    Title = "Eh.",
+    Desc = "Eh.",
     Reason = " ",
-    Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/blonk.pngraw=true","blonk"),
+    Image = GitPNG("","badge"),
 })
 end
     end
@@ -188,10 +188,10 @@ coroutine.wrap(function()
 local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 -- Creates and displays your custom achievement
 Achievements.Get({
-    Title = " !",
-    Desc = " .",
+    Title = "Greediness!",
+    Desc = "Encounter Greed.",
     Reason = " ",
-    Image = GitPNG("","69badge"),
+    Image = GitPNG("https://github.com/ThatNoah/floor-2/blob/main/20230416_001016.png?raw=trur","Greedbadge"),
 })
 end
     end
