@@ -82,7 +82,8 @@ end
 entityTable.Debug.OnDeath = function()
     warn("Player has died.")
 firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to who you call Depth...", "He Rebounds 2 times..", "Hide until you are safe."}, "Red")
-end
+   end
+end()
 ------------------------------------
 
 
