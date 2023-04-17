@@ -9,7 +9,7 @@ end
 local reb = false
 local dep = false
 local sil = false
-local phil = false
+local a60 = false
 local blink = false
 local clam = false
 
@@ -114,7 +114,7 @@ end
     end
 end)()
 
--- Not taken yet
+-- 
 coroutine.wrap(function()
     while true do
         wait(750)
@@ -126,23 +126,23 @@ coroutine.wrap(function()
     end
 end)()
 
--- Not taken yet
+-- A-60
 coroutine.wrap(function()
     while true do
         wait(1204)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        loadstring(game:HttpGet("l"))()
-        if phil == false then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/A-60"))()
+        if a60 == false then
         wait(3)
-        phil = true
+        a60 = true
 local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
 -- Creates and displays your custom achievement
 Achievements.Get({
-    Title = "I can't see anything!",
-    Desc = "Encounter Phil.",
-    Reason = " ",
-    Image = GitPNG("","badge"),
+    Title = "Out of my way A-60!",
+    Desc = "Encounter A-60.",
+    Reason = "im ur nightmare",
+    Image = GitPNG("https://github.com/ThatNoah/floor-2/blob/main/a-60-badge-concept-modify-description-hello-there-streamer-v0-rtbujmmyefx91.png?raw=true","A-60badge"),
 })
 end
     end
