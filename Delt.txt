@@ -1,0 +1,118 @@
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(255, 234, 0)
+game.Lighting.MainColorCorrection.Contrast = 0.3
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(0.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(0.5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+    local roast = Instance.new("Sound")
+    roast.Parent = workspace
+    roast.Name = "roast"
+    roast.SoundId = "rbxassetid:///9114038441"
+    roast.Volume = 0.5
+    roast.Pitch = 3
+    roast:Play()
+    wait(0.6)
+    roast:Destroy()
+
+
+local Spawnersass = loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Endless-Doors-In-Doors/main/ModifiedSpawnerTest.lua"))()
+
+-- Create entity
+local entityTable = Spawner.createEntity({
+    CustomName = "Delt", -- Custom name of your entity
+    Model = "https://github.com/a13238123/Explorer/blob/main/avolt.rbxm?raw=true", -- Can be GitHub file or rbxassetid
+    Speed = 500, -- Percentage, 100 = default Rush speed
+    DelayTime = 7.6, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = true,
+    KillRange = 50,
+    BackwardsMovement = true,
+    BreakLights = true,
+    FlickerLights = {
+        true, -- Enabled/Disabled
+        7.6, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 1,
+        Max = 4,
+        WaitTime = 3,
+    },
+    CamShake = {
+        true, -- Enabled/Disabled
+        {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        True, -- Enabled/Disabled
+        {
+            Image1 = "https://github.com/ThatNoah/Extreme-Mode/blob/main/Screenshot_20230315-092100_Roblox-removebg-preview.png?raw=true", -- Image1 url
+            Image2 = "https://github.com/ThatNoah/Extreme-Mode/blob/main/Screenshot_20230315-092100_Roblox-removebg-preview.png?raw=true", -- Image2 url
+            Shake = true,
+            Sound1 = {
+                10483790458, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Sound2 = {
+                10483837590, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled/Disabled
+                Color3.fromRGB(255, 255, 255), -- Color
+            },
+            Tease = {
+                true, -- Enabled/Disabled
+                Min = 1,
+                Max = 4,
+            },
+        },
+    },
+    CustomDialog = {"You Died To Who You Call delt", "He Is Weird And He came out of nowhere", "Well He rebounds 4-14 times Look out ", "You Must Defeat That Ugly Looking creature."}, -- Custom death message
+})
+
+
+-----[[  Debug -=- Advanced  ]]-----
+entityTable.Debug.OnEntitySpawned = function()
+    print("Entity has spawned:", entityTable)
+end
+
+entityTable.Debug.OnEntityDespawned = function()
+    print("Entity has despawned:", entityTable)
+	    local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+	
+	-- Creates and displays your custom achievement
+	Achievements.Get({
+	    Title = "Delt as belt.",
+	    Desc = "i can deal with you",
+	    Reason = "Encounter Delt",
+	    Image = "https://github.com/NoWayNoah/floor-2/blob/main/Delt-Badge%20%5B95795E2%5D.png?raw=true",
+	   })
+	end
+
+entityTable.Debug.OnEntityStartMoving = function()
+    print("Entity has started moving:", entityTable)
+end
+
+entityTable.Debug.OnEntityFinishedRebound = function()
+    print("Entity has finished rebound:", entityTable)
+end
+
+entityTable.Debug.OnEntityEnteredRoom = function(room)
+    print("Entity:", entityTable, "has entered room:", room)
+end
+
+entityTable.Debug.OnLookAtEntity = function()
+    print("Player has looked at entity:", entityTable)
+end
+
+entityTable.Debug.OnDeath = function()
+    warn("Player has died.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/guidinglight/main/Deltjumpscare"))()
+firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to who you call Delt..", "¡!He is faster than depth!¡", "Use what You learned from Rush and Ambush."}, "Blue")
+end
+------------------------------------
+
+
+-- Run the created entity
+Spawner.runEntity(entityTable)
