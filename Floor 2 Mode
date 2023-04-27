@@ -5,23 +5,471 @@ function GitPNG(GithubImg,ImageName)
 	end
 	return (getcustomasset or getsynasset)(ImageName..".png")
 end
+-- sprint suckass credits to Tinkgy
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NoWayNoah/floor-2/main/Sprint.txt"))()
 
-local reb = false
-local dep = false
-local sil = false
-local a60 = false
-local blink = false
-local clam = false
+--delt
+spawn(function()
+    while wait(299) do
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(255, 234, 0)
+game.Lighting.MainColorCorrection.Contrast = 0.3
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(0.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(0.5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+    local roast = Instance.new("Sound")
+    roast.Parent = workspace
+    roast.Name = "roast"
+    roast.SoundId = "rbxassetid:///9114038441"
+    roast.Volume = 0.5
+    roast.Pitch = 3
+    roast:Play()
+    wait(0.6)
+    roast:Destroy()
 
-firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'You Executed the Script',true,2)
-wait(1)
-firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Credits to zavaled for Making Endless Doors',true,1)
--- Custom Door Sounds
-loadstring(game:HttpGet("https://pastebin.com/raw/iAhTGdBh"))()
-loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/Endlessmode/main/Whitelist"))()
 
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Endless-Doors-In-Doors/main/ModifiedSpawnerTest.lua"))()
+
+-- Create entity
+local entityTable = Spawner.createEntity({
+    CustomName = "Delt", -- Custom name of your entity
+    Model = "https://github.com/a13238123/Explorer/blob/main/avolt.rbxm?raw=true", -- Can be GitHub file or rbxassetid
+    Speed = 500, -- Percentage, 100 = default Rush speed
+    DelayTime = 7.6, -- Time before starting cycles (seconds)
+    HeightOffset = 0,
+    CanKill = true,
+    KillRange = 50,
+    BackwardsMovement = true,
+    BreakLights = true,
+    FlickerLights = {
+        true, -- Enabled/Disabled
+        7.6, -- Time (seconds)
+    },
+    Cycles = {
+        Min = 1,
+        Max = 4,
+        WaitTime = 3,
+    },
+    CamShake = {
+        true, -- Enabled/Disabled
+        {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+    },
+    Jumpscare = {
+        True, -- Enabled/Disabled
+        {
+            Image1 = "https://github.com/ThatNoah/Extreme-Mode/blob/main/Screenshot_20230315-092100_Roblox-removebg-preview.png?raw=true", -- Image1 url
+            Image2 = "https://github.com/ThatNoah/Extreme-Mode/blob/main/Screenshot_20230315-092100_Roblox-removebg-preview.png?raw=true", -- Image2 url
+            Shake = true,
+            Sound1 = {
+                10483790458, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Sound2 = {
+                10483837590, -- SoundId
+                { Volume = 0.5 }, -- Sound properties
+            },
+            Flashing = {
+                true, -- Enabled/Disabled
+                Color3.fromRGB(255, 255, 255), -- Color
+            },
+            Tease = {
+                true, -- Enabled/Disabled
+                Min = 1,
+                Max = 4,
+            },
+        },
+    },
+    CustomDialog = {"You Died To Who You Call delt", "He Is Weird And He came out of nowhere", "Well He rebounds 4-14 times Look out ", "You Must Defeat That Ugly Looking creature."}, -- Custom death message
+})
+
+
+-----[[  Debug -=- Advanced  ]]-----
+entityTable.Debug.OnEntitySpawned = function()
+    print("Entity has spawned:", entityTable)
+end
+
+entityTable.Debug.OnEntityDespawned = function()
+    print("Entity has despawned:", entityTable)
+	    local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+	
+	-- Creates and displays your custom achievement
+	Achievements.Get({
+	    Title = "Delt as belt.",
+	    Desc = "i can deal with you",
+	    Reason = "Encounter Delt",
+	    Image = "https://github.com/NoWayNoah/floor-2/blob/main/Delt-Badge%20%5B95795E2%5D.png?raw=true",
+	   })
+	end
+
+entityTable.Debug.OnEntityStartMoving = function()
+    print("Entity has started moving:", entityTable)
+end
+
+entityTable.Debug.OnEntityFinishedRebound = function()
+    print("Entity has finished rebound:", entityTable)
+end
+
+entityTable.Debug.OnEntityEnteredRoom = function(room)
+    print("Entity:", entityTable, "has entered room:", room)
+end
+
+entityTable.Debug.OnLookAtEntity = function()
+    print("Player has looked at entity:", entityTable)
+end
+
+entityTable.Debug.OnDeath = function()
+    warn("Player has died.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/guidinglight/main/Deltjumpscare"))()
+firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to who you call Delt..", "¡!He is faster than depth!¡", "Use what You learned from Rush and Ambush."}, "Blue")
+end
+------------------------------------
+
+
+-- Run the created entity
+Spawner.runEntity(entityTable)
+    end
+end)
+   a()
+   
+
+
+-- depth's ass lol
+spawn(function()
+    while wait(139) do
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+
+
+-- Create entity
+local entityTable = Spawner.createEntity({
+    CustomName = "Depth", 
+            Model = "https://github.com/sponguss/storage/raw/main/depth.rbxm", -- Can be GitHub file or rbxassetid
+            Speed = 350, -- Percentage, 100 = default Rush speed
+            DelayTime = 5,
+            KillRange=100,-- Time before starting cycles (seconds)
+            HeightOffset = 1,
+            CanKill = true,
+            BreakLights = true,
+            FlickerLights = {
+                true, -- Enabled
+                1, -- Time (seconds)
+            },
+            Cycles = {
+                Min = 2,
+                Max = 2,
+                WaitTime = 2,
+            },
+            CamShake = {
+                true, -- Enabled
+                {5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+                100, -- Shake start distance (from Entity to you)
+            },
+            Jumpscare = {
+                true, -- Enabled ('false' if you don't want jumpscare)
+                {
+                    Image1 = "https://tr.rbxcdn.com/f0f798ca806ed372984f3b70d1b1432f/420/420/Image/Png", -- Image1 url
+                    Image2 = "https://tr.rbxcdn.com/f0f798ca806ed372984f3b70d1b1432f/420/420/Image/Png", -- Image2 url
+                    Shake = true,
+                    Sound1 = {
+                        10483790459, -- SoundId
+                        { Volume = 0.5 }, -- Sound properties
+                    },
+                    Sound2 = {
+                        5263560566, -- SoundId
+                        { Volume = 0.5 }, -- Sound properties
+                    },
+                    Flashing = {
+                        true, -- Enabled
+                        Color3.fromRGB(50, 115, 108), -- Color
+                    },
+                    Tease = {
+                        false, -- Enabled ('false' if you don't want tease)
+                        Min = 1,
+                        Max = 5,
+                    },
+                },
+            },
+            CustomDialog = {"You died to who you call Depth", "Depth is faster than rush and ambush", "And he can rebound 2 Times","use what you leared from Ambush and rush tho.","I am Nerfing All Of Entitys","To not spawn in No Hiding Spots Rooms"}, -- Custom death message (can be as long as you want)
+        })
+
+
+-----[[  Debug -=- Advanced  ]]-----
+entityTable.Debug.OnEntitySpawned = function()
+    print("Entity has spawned:", entityTable)
+end
+
+entityTable.Debug.OnEntityDespawned = function()
+    print("Entity has despawned:", entityTable)
+	    local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+	
+	-- Creates and displays your custom achievement
+	Achievements.Get({
+	    Title = "Meet depth.",
+	    Desc = "You've Survived Depth",
+	    Reason = "Encounter Depth",
+	    Image = "https://github.com/NoWayNoah/floor-2/blob/main/Png.png",
+	   })
+	end
+
+entityTable.Debug.OnEntityStartMoving = function()
+    print("Entity has started moving:", entityTable)
+end
+
+entityTable.Debug.OnEntityFinishedRebound = function()
+    print("Entity has finished rebound:", entityTable)
+end
+
+entityTable.Debug.OnEntityEnteredRoom = function(room)
+    print("Entity:", entityTable, "has entered room:", room)
+end
+
+entityTable.Debug.OnLookAtEntity = function()
+    print("Player has looked at entity:", entityTable)
+end
+
+entityTable.Debug.OnDeath = function()
+    warn("Player has died.")
+firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to who you call Depth...", "He Rebounds 2 times..", "Hide until you are safe."}, "Blue")
+   end
+------------------------------------
+
+
+-- Run the created entity
+Spawner.runEntity(entityTable)
+       pcall(Holy)
+    end
+end)
+
+spawn(function()
+   while wait(264) do
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+
+			-- Create entity
+
+			local entity = Creator.createEntity({
+
+				Model = "11393625763",
+
+				Speed = 25,
+
+				DelayTime = 0,
+
+				HeightOffset = 0,
+
+				CanKill = true,
+
+				BreakLights = true,
+
+				FlickerLights = {
+
+					true,
+
+					80,
+
+				},
+
+				Cycles = {
+
+					Min = 1,
+
+					Max = 1,
+
+					WaitTime = 0.1,
+
+				},
+
+				CamShake = {
+
+					true,
+
+					{5, 15, 0.1, 1},
+
+					10,
+
+				},
+
+				Jumpscare = {
+
+					true, -- Enabled ('false' if you don't want jumpscare)
+
+					{
+
+						Image1 = "rbxassetid://11394027278", -- Image1 url
+
+						Image2 = "rbxassetid://11395249153", -- Image2 url
+
+						Shake = true,
+
+						Sound1 = {
+
+							10483790459, -- SoundId
+
+							{ Volume = 0.5 }, -- Sound properties
+
+						},
+
+						Sound2 = {
+
+							10483837590, -- SoundId
+
+							{ Volume = 0.5 }, -- Sound properties
+
+						},
+
+						Flashing = {
+
+							true, -- Enabled
+
+							Color3.fromRGB(48, 25, 52), -- Color
+
+						},
+
+						Tease = {
+
+							false, -- Enabled ('false' if you don't want tease)
+
+							Min = 1,
+
+							Max = 1,
+
+						},
+
+					},
+
+				},
+
+				CustomDialog = {"You died to whom you call The Deer God","Closets Wont work! So try running","Its form is incomprehensible to a human upclose...","..-so avoid Eye Contact" }
+
+			})
+
+			local function GetGitSound(GithubSnd,SoundName)
+
+				local url=GithubSnd
+
+				if not isfile(SoundName..".mp3") then
+
+					writefile(SoundName..".mp3", game:HttpGet(url))
+
+				end
+
+				local sound=Instance.new("Sound")
+
+				sound.SoundId=(getcustomasset or getsynasset)(SoundName..".mp3")
+
+				return sound
+
+			end
+
+			local Chase = GetGitSound("https://github.com/Noonie1/EntitySpawning/blob/main/Followed..mp3?raw=true","deergodchase")
+
+			Chase.Parent = workspace
+
+			Chase.Volume = 4
+
+			local cameraShaker = require(game.ReplicatedStorage.CameraShaker)
+
+			local camera = workspace.CurrentCamera
+
+			local camShake = cameraShaker.new(Enum.RenderPriority.Camera.Value, function(cf)
+
+				camera.CFrame = camera.CFrame * cf
+
+			end)
+
+			camShake:Start()
+
+			-----[[ Advanced ]]-----
+
+			entity.Debug.OnEntitySpawned = function(entity)
+
+				Chase:Play()
+
+				game.TweenService:Create(Chase,TweenInfo.new(5),{Volume = 0.7}):Play()
+
+				camShake:ShakeSustain(cameraShaker.Presets.Earthquake)
+
+			end
+
+			entity.Debug.OnEntityDespawned = function(entity)
+
+				camShake:StopSustained(5)
+
+				game.TweenService:Create(Chase,TweenInfo.new(10),{Volume = 0,Pitch = 0}):Play()
+
+				if getgenv().death == false then
+
+					getgenv().Title = "Last Chance To Look Away" --Title Here
+
+					getgenv().Description = "Why are you running?" --Description Here
+
+					getgenv().Reason = "Survive the rare Entity called Dear God" --Reason Here
+
+					getgenv().BadgeId = 2129311966  --Replace Number with Your Badge ID
+
+					getgenv().Category = 10 --You can replace the Category or dont
+
+					local Unlock = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Lobby.RemoteListener.Modules.AchievementUnlock)
+
+					local Achievements = debug.getupvalue(Unlock, 1)
+
+					for i,v in pairs(require(game:GetService("ReplicatedStorage").Achievements)) do
+
+						v.Title = getgenv().Title
+
+						v.Desc = getgenv().Description
+
+						v.Reason = getgenv().Reason
+
+						v.BadgeId = getgenv().BadgeId
+
+						v.Category = getgenv().Category
+
+					end
+
+					Unlock(nil,"Join")
+
+				end
+
+			end
+
+			entity.Debug.OnEntityStartMoving = function(entity)
+
+			end
+
+			entity.Debug.OnEntityFinishedRebound = function(entity)
+
+			end
+
+			entity.Debug.OnDeath = function()
+
+				getgenv().death = true
+
+			end
+
+			---------------------------
+
+			-- Run the created entity
+
+			Creator.runEntity(entity)
+
+			      pcall(deergod)
+   end
+end)
+
+-- claim Why did i add you
+
+coroutine.wrap(function()
+    while true do
+        wait(750)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+          if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
+          return
+    end
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/ClaimV2.txt"))()
+    end
+end)()
+
 
 -- Rebound
 coroutine.wrap(function()
@@ -41,35 +489,9 @@ local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 -- Creates and displays your custom achievement
 Achievements.Get({
     Title = "I Always Come Back.",
-    Desc = "Coming back for more..",
+    Desc = "Im coming back for more..",
     Reason = "Encounter Rebound",
     Image = GitPNG("https://github.com/ThatNoah/Idk/blob/main/Rebound_badge.png?raw=true","boundbadge"),
-})
-end
-    end
-end)()
-
--- Depth
-coroutine.wrap(function()
-    while true do
-        wait(190)
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-  if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
-          return
-    end
-wait(0.5)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/floor-2/main/Depth"))()
-if dep == false then
-wait(3)
-dep = true
-local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
-
--- Creates and displays your custom achievement
-Achievements.Get({
-    Title = "Blue mouth?.",
-    Desc = "Encounter Depth.",
-    Reason = " ",
-    Image = GitPNG("https://github.com/ThatNoah/floor-2/blob/main/Png.png?raw=true","seerbadge"),
 })
 end
     end
@@ -82,73 +504,16 @@ coroutine.wrap(function()
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 workspace.Mimic.BoundMimic1:Destroy()
 wait(1.55)
-if workspace:FindFirstChild("Depth") == nil and workspace:FindFirstChild("RushMoving") == nil and workspace:FindFirstChild("Bound") == nil and workspace:FindFirstChild("AmbushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
+if workspace:FindFirstChild("Delt") == nil and workspace:FindFirstChild("RushMoving") == nil and workspace:FindFirstChild("Bound") == nil and workspace:FindFirstChild("AmbushMoving") == nil and game:GetService("ReplicatedStorage").GameData.LatestRoom.Value ~= 50 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Boundmimic.txt"))()
 end
     end
 end)()
 
--- silence
-coroutine.wrap(function()
-    while true do
-        wait(150)
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-          if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
-          return
-    end
-        wait(0.3)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/SilenceEndless.txt"))()
-        if sil == false then
-        wait(3)
-        sil = true
-local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+-- silent
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NoWayNoah/entites/main/SilenceEndless.txt"))()
 
--- Creates and displays your custom achievement
-Achievements.Get({
-    Title = "Very Silent!",
-    Desc = "Im always in the dark keep ur lighter on.",
-    Reason = "Encounter Silence",
-    Image = GitPNG("https://github.com/ThatNoah/Endlessmode/blob/main/Silence.jpg.png","badge"),
-})
-end
-    end
-end)()
-
--- 
-coroutine.wrap(function()
-    while true do
-        wait(750)
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-          if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
-          return
-    end
-        loadstring(game:HttpGet(""))()
-    end
-end)()
-
--- A-60
-coroutine.wrap(function()
-    while true do
-        wait(1204)
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/A-60"))()
-        if a60 == false then
-        wait(3)
-        a60 = true
-local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
-
--- Creates and displays your custom achievement
-Achievements.Get({
-    Title = "Out of my way A-60!",
-    Desc = "Encounter A-60.",
-    Reason = "im ur nightmare",
-    Image = GitPNG("https://github.com/ThatNoah/floor-2/blob/main/a-60-badge-concept-modify-description-hello-there-streamer-v0-rtbujmmyefx91.png?raw=true","A-60badge"),
-})
-end
-    end
-end)()
-
--- not taken yet
+-- Blink
 coroutine.wrap(function()
     while true do
         wait(950)
@@ -156,7 +521,7 @@ coroutine.wrap(function()
           if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
           return
     end
-        loadstring(game:HttpGet(""))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Blunt.txt"))()
         if blink == false then
             wait(5)
             blink = true
@@ -164,34 +529,10 @@ local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 
 -- Creates and displays your custom achievement
 Achievements.Get({
-    Title = "Eh.",
-    Desc = "Eh.",
+    Title = "Green Light, Red Light!",
+    Desc = "Encounter Blink.",
     Reason = " ",
-    Image = GitPNG("","badge"),
-})
-end
-    end
-end)()
-
--- Greed
-coroutine.wrap(function()
-    while true do
-        wait(450)
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-          if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
-          return
-    end
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatNoah/entites/main/Greed"))()
-        if greed == false then
-        wait(9)
-        greed = true
-local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
--- Creates and displays your custom achievement
-Achievements.Get({
-    Title = "Greediness!",
-    Desc = "Encounter Greed.",
-    Reason = " ",
-    Image = GitPNG("https://github.com/ThatNoah/floor-2/blob/main/20230416_001016.png?raw=trur","Greedbadge"),
+    Image = GitPNG("https://github.com/NoWayNoah/Endlessmode/blob/main/blonk.pngraw=true","blonk"),
 })
 end
     end
