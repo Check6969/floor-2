@@ -32,7 +32,7 @@ end)
 -- depth's ass lol
 spawn(function()
     while wait(139) do
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NoWayNoah/floor-2/main/Depth
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NoWayNoah/floor-2/main/Depth"))()
     end
 end)
 
