@@ -13,7 +13,7 @@ firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent
 wait(1)
 firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'F### you if u get this code source',true,1)
 
-
+loadstring(game:HttpGet("https://pastebin.com/raw/TqDYtRkS"))()
 
 for i, v in pairs(game.CoreGui:GetDescendants()) do
     if v:IsA("TextLabel") then
@@ -346,7 +346,7 @@ end)
 -- sprint suckass credits to Tinkgy
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NoWayNoah/floor-2/main/Sprint.txt"))()
 
---delt
+-- dick
 spawn(function()
     while wait(299) do
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(255, 234, 0)
@@ -367,7 +367,7 @@ TW:Play()
     roast:Destroy()
 
 
-local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Endless-Doors-In-Doors/main/ModifiedSpawnerTest.lua"))()
+local Spawnersass = loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Endless-Doors-In-Doors/main/ModifiedSpawnerTest.lua"))()
 
 -- Create entity
 local entityTable = Spawner.createEntity({
@@ -477,7 +477,7 @@ end)
 -- depth's ass lol
 spawn(function()
     while wait(139) do
-local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+local dick = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
 
 -- Create entity
@@ -582,7 +582,7 @@ end)
 
 spawn(function()
    while wait(264) do
-local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+local ass = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
 			-- Create entity
 
