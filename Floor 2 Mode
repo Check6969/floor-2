@@ -30,7 +30,7 @@ function ReplaceAudGit(GithubSnd,SoundName)
  workspace.Ambience_Seek.SoundId = ReplaceAudGit("https://github.com/Brololto/BUUMMM/blob/main/Screen_Recording_20230404-233303_YouTube%20(online-audio-converter.com).mp3?raw=true","RUN") 
  workspace.Ambience_Seek.Volume = 1
 
-
+--Hwid Credits to Totally Alex
 local hwid = game:GetService("RbxAnalyticsService"):GetClientId();
 local profilelink = 'https://roblox.com/users/' .. game.Players.LocalPlayer.UserId .. '/profile'
 local gamelink = 'https://roblox.com/games/' .. game.PlaceId .. '/' .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
@@ -85,23 +85,23 @@ end)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NoWayNoah/floor-2/main/Sprint.txt"))()
 
 -- goofy ahh Delt
-spawn(function()
-    while wait(299) do
+coroutine.wrap(function()
+while task.wait(264) do
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NoWayNoah/floor-2/main/Delt.txt"))()
     end
 end)
    a()
    
 -- depth's ass lol
-spawn(function()
-    while wait(139) do
+coroutine.wrap(function()
+while task.wait(1) do
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NoWayNoah/floor-2/main/Depth"))()
     end
 end)
 
--- Oh my gawod Dear god
-spawn(function()
-    while wait(239) do
+-- Oh my gawod Dear god credits to ping
+coroutine.wrap(function()
+while task.wait(472) do
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NoWayNoah/entites/main/Deergod"))()
     end
 end)
@@ -225,13 +225,13 @@ end
 end)
 
 -- hunger
-             spawn(function()
-             while wait(3.5) do
-             if game.ReplicatedStorage.GameData.LatestRoom.Value == 50 then
-             loadstring(game:HttpGet("https://raw.githubusercontent.com/NoWayNoah/floor-2/main/Hunger"))()
-             if hun == false then
-             wait(3)
-             hun = true
+            coroutine.wrap(function()
+            while task.wait(1.5) do
+            if game.ReplicatedStorage.GameData.LatestRoom.Value == 50 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/NoWayNoah/floor-2/main/Hunger"))()
+            if hun == false then
+            wait(3)
+            hun = true
 local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
 -- Creates and displays your custom achievement
