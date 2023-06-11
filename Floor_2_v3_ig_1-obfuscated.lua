@@ -14,7 +14,7 @@ local function replaceHttpUrlWithFake(httpUrl)
     return httpUrl:gsub("^https?://", fakeHttp)
 
 end
-
+-- Lol
 -- Function to detect and prevent HTTP UI spys
 
 local function preventHttpUISpy(request, response)
