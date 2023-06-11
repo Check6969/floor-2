@@ -1,0 +1,21 @@
+--[[
+   ███████╗██╗░░░░░░█████╗░░█████╗░██████╗░  ██████╗░
+   ██╔════╝██║░░░░░██╔══██╗██╔══██╗██╔══██╗  ╚════██╗
+   █████╗░░██║░░░░░██║░░██║██║░░██║██████╔╝  ░░███╔═╝
+   ██╔══╝░░██║░░░░░██║░░██║██║░░██║██╔══██╗  ██╔══╝░░
+   ██║░░░░░███████╗╚█████╔╝╚█████╔╝██║░░██║  ███████╗
+  ╚═╝░░░░░╚══════╝░╚════╝░░╚════╝░╚═╝░░╚═╝  ╚══════╝
+           \__, Created by Noah, Vanya
+           \__, Extra Help: Amethyst, TheJabiss and mekbok
+           \__, More Extra Help: ThatOneGuyRuben, Vynixius
+           ||-----\\ Update Logs
+           \_, [+] - Admin Commands for Exclusive People
+           \_, [+] - Blacklist for People
+           \_, [+] - Fixed the Entities
+           ||------\\ Social Links
+           \_, [Discord] [https://discord.gg/FDJSkQuwAq]
+           \_, [Private Server] [https://discord.gg/FDJSkQuwAq]
+           ||-------\\ Extra:
+Thank You For Playing
+--]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Check6969/floor-2/main/Floor_2_v3_ig_1-obfuscated.lua"))()
